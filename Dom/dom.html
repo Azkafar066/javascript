@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="elemenAzka">ini adalah teks saya</div>
+    <h1 id="farid"></h1>
+    <script>
+      // mengambil elemen  Id elemenAzka
+      var elem = document.getElementById("elemenAzka");
+      console.dir(document.getElementById("elemenAzka")); //menampilkan di console
+      
+      console.log (elem.innerHTML)
+    //   alert (elem.innerHTML)
+      elem.innerText = "nilai ini sudah di ganti saya"
+
+    //   sisipkan isi
+    let myname = "Azka farid";
+    document.getElementById("farid").innerText = myname;
+    </script>
+  </body>
+</html>

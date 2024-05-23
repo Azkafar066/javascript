@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Tugas 1 -->
+    <div id="myParagraf">Hafizh Quran Mahir IT</div>
+
+    <!-- Tugas 2 -->
+    <h1 id="myProject">Ini adalah text sekarang</h1>
+    <div id="hasil"></div>
+    <!--Tugas 3-->
+    <ul id="myList"></ul>
+    <!--Tugas 4-->
+    <input type="text" id="ukuranBaju" placeholder="Masukkan ukuran baju" />
+    <button onclick="myFunction()">Tampilkan</button>
+    <input type="text" id="ukuranSprei" placeholder="Masukkan ukuran sprei" />
+    <button onclick="console.log(document.getElementById('ukuranSprei').value)">
+      Tampilkan
+    </button>
+    <!--Tugas 5-->
+    <input type="text" id="ukuranCelana" placeholder="Masukkan ukuran celana" />
+    <button onclick="hitungUkuranCelana()">Tampilkan</button>
+    <ul id="hasil"></ul>
+    <script>
+      //memanggil
+      var elem = document.getElementById("myParagraf");
+      console.log(elem.innerText);
+      alert(elem.innerText);
+      // Tugas 2A
+      //memanggil
+      var elem = document.getElementById("myProject");
+      console.log(elem.innerText);
+      elem.innerText = "Text yang lama sudah diganti dengan yang baru";
+      // Tugas 2B
+      // Sisipkan nilai di id 'hasil'
+      let myNumber = 10;
+      document.getElementById("hasil").innerText = myNumber;
+      // Tugas 3
+      // Buat elemen <li> ke dalam id 'myList'
+      let li = document.createElement("li");
+      // Tambahkan teks ke dalam elemen <li>
+      li.innerText = "List Makan Siang";
+      // Sisipkan elemen <li> ke dalam elemen dengan id 'myList'
+      document.getElementById("myList").appendChild(li);
+      // Tugas 4
+      function myFunction() {
+        console.log(document.getElementById("ukuranBaju").value);
+      }
+      //Tugas 5
+      function hitungUkuranCelana() {
+        let ukuranCelana = document.getElementById("ukuranCelana").value;
+        // Buat elemen <li> ke dalam id 'ukuranCelana'
+        let li5 = document.createElement("li");
+        // Tambahkan teks ke dalam elemen <li5>
+        li5.innerText = ukuranCelana;
+        //Sisipkan elemen <li5> ke dalam elemen dengan id 'ukuranCelana'
+        document.getElementById("hasil").appendChild(li5);
+      }
+    </script>
+  </body>
+</html>
