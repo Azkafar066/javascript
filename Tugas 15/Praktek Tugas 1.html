@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pemeriksaan Angka</title>
+  </head>
+  <body>
+    <script>
+      function checkNumber() {
+        // Meminta pengguna memasukkan angka
+        var input = prompt("Masukkan sebuah angka:");
+
+        // Mengonversi input menjadi angka
+        var number = Number(input);
+
+        // Memeriksa apakah input valid dan angka lebih besar dari atau sama dengan 10
+        if (!isNaN(number)) {
+          if (number > 10) {
+            alert("Angka yang dimasukkan lebih besar dari 10.");
+          } else if (number === 10) {
+            alert("Angka yang dimasukkan sama dengan 10.");
+          } else {
+            alert("Angka yang dimasukkan kurang dari 10.");
+          }
+        } else {
+          alert("Silakan masukkan angka yang valid.");
+        }
+      }
+    </script>
+  </body>
+</html>

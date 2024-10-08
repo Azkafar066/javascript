@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirm Box Demo</title>
+  </head>
+  <body>
+    <script>
+      // Fungsi untuk menampilkan confirm box saat halaman dimuat
+      window.onload = function () {
+        var result = confirm("Apakah Anda yakin ingin melanjutkan?");
+        if (result) {
+          alert("Anda Memilih OK");
+        } else {
+          alert("Anda Memilih Cancel!");
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prompt Box Contoh</title>
+  </head>
+  <body>
+    <script>
+      // Fungsi yang dipanggil saat halaman dimuat
+      window.onload = function () {
+        // Meminta pengguna untuk memasukkan nama
+        var nama = prompt("Silakan masukkan nama Anda:");
+
+        // Memeriksa apakah pengguna memasukkan nama
+        if (nama) {
+          // Menampilkan alert box dengan sapaan
+          alert("Halo, " + nama + "!");
+        } else {
+          // Menampilkan alert box jika tidak ada nama yang dimasukkan
+          alert("Anda tidak memasukkan nama.");
+        }
+      };
+    </script>
+  </body>
+</html>
